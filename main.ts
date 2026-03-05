@@ -1,8 +1,19 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Illia
+ * Created on: MAR 2026
+ * This program: Temperature
 */
 
-basic.showString('Hello, World!')
+let temperature = 0
+
+
+basic.showIcon(IconNames.Happy)
+
+
+input.onButtonPressed(Button.A, function () {
+    temperature + input.temperature()
+
+    basic.showString('The temperature is :' + temperature + ' C')
+})
+
