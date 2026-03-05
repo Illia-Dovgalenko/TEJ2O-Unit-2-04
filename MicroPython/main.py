@@ -1,9 +1,15 @@
 """
-Created by: Mr. Coxall
-Created on: Sep 2020
-This module is a Micro:bit MicroPython program
+Created by: Illia
+Created on: MAR 2026
+This program: Temperature
 """
 
 from microbit import *
 
-display.scroll("Hello, World!")
+display.clear()
+display.show(Image.HAPPY)
+
+while True:
+    if button_a.was_pressed():
+        display.scroll(temperature() + "C")
+
